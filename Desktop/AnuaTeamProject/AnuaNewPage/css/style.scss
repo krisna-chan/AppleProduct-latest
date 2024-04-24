@@ -1,0 +1,102 @@
+ @import "../node_modules/bootstrap/scss/bootstrap";
+
+ 
+ .price{
+    p{
+        font-weight: 100;
+    }
+ }
+
+.col{
+    gap: 1.25rem;
+}
+
+ .card{
+    border : none !important;
+    margin : 10px 25px 10px 25px !important;
+ }
+
+a{
+    color:rgb(153, 153, 153) !important;
+    text-decoration:none !important;
+}
+
+.product-info{
+    margin-left: 10px;
+    p{
+        font-weight: 600;
+    }
+    .price{
+        p{
+            font-weight: 100;
+        }
+    }
+}
+.rate{
+    a{
+        font-weight: 100;
+    }
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    .rate{
+        margin-left: 5px;
+    }
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    .box{
+        display: flex;
+        .four-box{
+            margin-right: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        .six-box{
+            margin-right: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    }
+    .sorter{
+        display: flex;
+        .sort{
+            margin-right: 5px;
+            cursor: pointer;
+        }
+    }
+}
+// ================= HOVER EFFECT ================================================
+.card{
+    cursor: pointer;
+}
+.card > .card-img-top{
+    z-index: 1;
+}
+.card.card-img-buttom{
+    position: absolute;
+}
+.card.card-img-buttom {
+    // position: absolute;
+    display: block;
+  }
+  
+// .card.card-img-buttom{
+//     z-index: -1;
+// }
+  .card > .card-img-buttom {
+    opacity: 1;
+    transition: opacity .1s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    position: absolute;
+    // z-index: 0;
+
+  }
+  .card:hover > .card-img-top {
+    opacity: 0;
+  }
