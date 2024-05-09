@@ -1,4 +1,5 @@
-    * {
+
+* {
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
@@ -41,7 +42,7 @@ ul{
         }
     }
     .card{
-        border-radius: 10px;
+        border-radius: 10px !important;
     }
 
     .header-container{
@@ -63,15 +64,20 @@ li{
     }
 }
 .trade-section{
-    img{
-        width: 300px;
-    }
+    display: block;
+    
     .trade-item{
         margin: auto;
     }
     .img-container{
         margin: auto;
     }
+}
+.title * {
+    font-size: 2rem;
+}
+.price *{
+    font-size: 1.2rem;
 }
 #refund-content{
     img{
@@ -103,5 +109,10 @@ li{
 .hidden-card{
     display: none !important;
 }
+
+.nav{
+    font-size: 1rem !important;
+}
+
 
 /*# sourceMappingURL=/trading.e38c7fb7.css.map */

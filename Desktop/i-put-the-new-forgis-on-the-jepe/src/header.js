@@ -42,7 +42,7 @@ const headerContent = `
                 </div>
         </div>
 
-        <div class="hover-container">
+        <div class="hover-container" style = "width : 100% ; height : 30%">
             <div class="hover-content" style="background-color:rgb(255, 255, 255 , .9);">
                 <ul class="inner-content store d-flex">
                     <li style="max-width: 300px; padding-right: 10px;" class="shop-sub mini">Shop
@@ -98,34 +98,43 @@ const headerContent = `
 </html>`;
 
 header.innerHTML = headerContent;
+const store = document.querySelector('.store');
+const hoverContainer = document.querySelector('.hover-container');
+const content = document.querySelector('.hover-content');
+const blury = document.querySelector('.container-wrapper')
 
-const store = document.querySelector('.store')
-const hoverContainer = document.querySelector('.hover-container')
-const content = document.querySelector('.hover-content')
+const navElements = [
+  document.getElementById('store-nav'),
+  document.getElementById('mac-nav'),
+  document.getElementById('ipad-nav'),
+  document.getElementById('iwatch-nav'),
+  document.getElementById('vision-nav'),
+  document.getElementById('airpods'),
+  document.getElementById('tvhome-nav'),
+  document.getElementById('entertainment-nav'),
+  document.getElementById('accessories-nav'),
+];
 
+function toggleContent(showContent) {
+  content.style.transition = "ease-in-out .1s";
+  content.style.opacity = showContent ? "1" : "0";
+  content.style.height = showContent ? "700px" : "0px";
+  store.style.visibility = showContent ? 'visible' : 'hidden';
+  blury.style.filter = showContent?  'blur(0.6rem)' : 'blur(0)'
+  console.log(showContent ? 'in' : 'out');
+}
 
-const storeNav = document.getElementById('store-nav');
+navElements.forEach(nav => {
+  nav.addEventListener('mouseover', () => toggleContent(true));
 
+  nav.addEventListener('mouseout', () => toggleContent(false));
+})
 
-storeNav.addEventListener('mouseover', () => {
-console.log('in')
-content.style.height = "700px"
-content.style.transition = "ease-in-out .1s"
-content.style.opacity = "1"
-store.style.visibility = 'visible'
-
-});
-hoverContainer.addEventListener('mouseout', () => {
-console.log('out')
-content.style.opacity = "0"
-content.style.height = "0px"
-store.style.visibility = 'hidden'
-
-});
 
 hoverContainer.addEventListener('mouseover', () => {
-console.log('in')
-content.style.opacity = "1"
-content.style.height = "700px"
-store.style.visibility = 'visible'
+    toggleContent(true);
 });
+
+hoverContainer.addEventListener('mouseout' , () => {
+    toggleContent(false)
+})

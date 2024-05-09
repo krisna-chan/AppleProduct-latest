@@ -118,14 +118,32 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"trading.js":[function(require,module,exports) {
-var buttons = document.querySelectorAll('#iphone, #iwatch, #mac, #ipad, #android, #recycle');
+var buttons = document.querySelectorAll('#iphone, #iwatch, #mac, #ipad, #android, #refund');
 var contents = document.querySelectorAll('#iphone-content, #iwatch-content, #mac-content, #ipad-content, #android-content, #refund-content');
 buttons.forEach(function (button) {
   button.addEventListener('click', function () {
     contents.forEach(function (content) {
       return content.classList.add('hidden');
     });
-    document.getElementById(button.id + '-content').classList.remove('hidden');
+    var clickedContentId = button.id + '-content';
+    document.getElementById(clickedContentId).classList.remove('hidden');
+  });
+});
+var buttonStore = document.querySelectorAll('#instore, #online');
+var instoreGroup = document.querySelector('.instore-group');
+var onlineGroup = document.querySelector('.online-group');
+function buttonClick(clickedButton) {
+  instoreGroup.classList.add('hidden');
+  onlineGroup.classList.add('hidden');
+  if (clickedButton.id === 'instore') {
+    instoreGroup.classList.remove('hidden');
+  } else {
+    onlineGroup.classList.remove('hidden');
+  }
+}
+buttonStore.forEach(function (button) {
+  return button.addEventListener('click', function () {
+    return buttonClick(button);
   });
 });
 },{}],"../../../../../opt/homebrew/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -153,7 +171,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49368" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60053" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
