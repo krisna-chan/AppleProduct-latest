@@ -21,7 +21,7 @@
             justify-content: space-evenly;
             font-size : 1.4rem;
         }
-            @media screen and (max-width : 830px) {
+            @media screen and (max-width : 992px) {
                 .hidden-nav{
                     display: none;
                 }

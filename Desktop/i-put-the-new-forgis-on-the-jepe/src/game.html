@@ -23,10 +23,10 @@
         <h2>Mac App Store Preview</h2>
     </div>
 
-    <div class="apple-arcade d-flex" style="flex-direction: row">
+    <div class="apple-arcade d-flex">
         <div class="arcade-title">
         <p style="margin: 0">Apple Arcade</p>
-        <p style="color: blue">Try it Free*</p>
+        <p style="color: #0070c9;">Try it Free*</p>
         </div>
         <div class="arcade-logo" style="width: 20px">
         <svg
@@ -219,7 +219,7 @@
     </button>
 </section>
 
-<section class="container">
+<section class="container whats-new">
     <div
     class="title-paragraph d-flex"
     style="justify-content: space-between"
@@ -236,6 +236,7 @@
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
         style="color: #0070c9;"
+        data-bs-backdrop="static"
     >
         Version History
     </button>
@@ -249,10 +250,10 @@
         aria-hidden="true"
     >
         <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content" style="border-radius: 20px;">
             <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Modal title
+                Version History
             </h1>
             <button
                 type="button"
@@ -287,6 +288,134 @@
         </div>
     </div>
     </div>
+    <div class="context d-flex" style="justify-content: space-between;">
+        <div class="paragraph">
+            <p style="max-width:513px ; font-size: 0.8rem;">The latest update brings you SimCast Live, introduces new ranks and rewards for MyCOURT 3v3 PVP, showcases fresh All-Star gear in MyCAREER, bug fixes, updates the roster, and unveils 8 additional "Greatest of All-Time" NBA players, featuring Shaquille O'Neal, Joel Embiid, Michael Jordan, Donovan Mitchell, Penny Hardaway, Tyrese Haliburton, David Robinson, and Domantas Sabonis.</p>
+        </div>
+        <div class="version">
+            <p>Version 1.2</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="container App-Privacy">
+    <div
+    class="title-paragraph d-flex"
+    style="justify-content: space-between"
+    >
+    <div class="title">
+        <h3>App Privacy</h3>
+    </div>
+    <!-- Scrollable modal -->
+    <!-- Scrollable modal -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal-privacy" style="color: #0070c9;">
+        See details
+    </button>
+
+    <!-- Modal -->
+    <div
+        class="modal fade"
+        id="exampleModal-privacy"
+        tabindex="-1"
+        aria-labelledby="exampleModal"
+        aria-hidden="true"
+        data-bs-backdrop="static"
+    >
+        <div class="modal-dialog">
+        <div class="modal-content" style="border-radius: 20px;">
+            <div class="modal-header">
+            <h1 class="modal-title fs-6" id="exampleModalLabel">
+                App Privacy
+            </h1>
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+            ></button>
+            </div>
+            <div class="modal-body">
+            <p>
+                The developer, 2K, indicated that the app’s privacy practices may include handling of data as described below. This information has not been verified by Apple. For more information, see the developer’s privacy policy.
+            </p>
+            <p style="border-top: 1px solid #d6d6d6;">
+                To help you better understand the developer’s responses, see Privacy Definitions and Examples.
+                <br>
+                Privacy practices may vary, for example, based on the features you use or your age. <span class="more"> Learn More</span> 
+            </p>
+            <div class="alert-content privacy d-flex">
+
+                <div class="profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><path d="M7.36 17l3.208 3.208A24.23 24.23 0 007.39 32.235c0 13.44 10.93 24.374 24.366 24.374 4.374 0 8.483-1.159 12.035-3.186L47 56.631A28.616 28.616 0 0131.756 61C15.874 61 3 48.122 3 32.235A28.637 28.637 0 017.36 17zM9.77 6.642l47.588 47.606a2.204 2.204 0 010 3.11 2.206 2.206 0 01-3.111 0L6.632 9.753c-.829-.8-.856-2.283 0-3.11.826-.828 2.253-.886 3.138 0zM32.238 3C48.123 3 61 15.878 61 31.761c0 5.597-1.599 10.82-4.364 15.239l-3.208-3.209a24.221 24.221 0 003.182-12.03c0-13.437-10.934-24.37-24.372-24.37a24.223 24.223 0 00-12.03 3.18L17 7.363A28.628 28.628 0 0132.238 3zm-7.492 31L36 45H18.373C17.44 45 17 44.418 17 43.572c0-2.224 2.5-7.11 7.746-9.572zm6.915-20C35.733 14 39 17.634 39 22.002c0 2.419-.874 4.529-2.281 5.998L26 16.923C27.343 15.145 29.376 14 31.661 14z"></path></svg>
+                </div>
+                <div class="data-state">
+                    <h3>Data Not Linked to You</h3>
+                </div>
+                <div class="paragraph">
+                    <p>The following data, which may be collected but is not linked to your identity, may be used for following purposes: </p>
+                </div>
+            </div>
+            <div class="alert-content analytics">
+                <div class="title">
+                    <h5>Analytics</h5>
+                </div>
+                <div class="info-wrapper d-flex">
+                    <div class="data-logo">
+                        <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" class="privacy-type__glyph privacy-type__glyph--usage-data" aria-hidden="true"><path d="M49.925 53.844h7.098c3.287 0 4.978-1.572 4.978-4.692V14.52c0-3.12-1.69-4.717-4.978-4.717h-7.098c-3.239 0-4.93 1.596-4.93 4.717v34.632c0 3.12 1.691 4.692 4.93 4.692zm-21.412 0h7.097c3.287 0 4.955-1.572 4.955-4.692V21.475c0-3.12-1.668-4.717-4.955-4.717h-7.097c-3.264 0-4.955 1.596-4.955 4.717v27.677c0 3.12 1.691 4.692 4.955 4.692zm-21.413 0h7.074c3.287 0 4.978-1.572 4.978-4.692V28.406c0-3.12-1.691-4.716-4.978-4.716H7.1c-3.264 0-4.955 1.596-4.955 4.716v20.746c0 3.12 1.691 4.692 4.955 4.692z"></path></svg>
+                    </div>
+                    <div class="data-info">
+                        <h6>Usage Data</h6>
+                        <p>Other Usage Data</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="context d-flex" style="justify-content: space-between;">
+        <div class="paragraph">
+            <p style="max-width: 900px; font-size: 0.8rem;">The latest update brings you SimCast Live, introduces new ranks and rewards for MyCOURT 3v3 PVP, showcases fresh All-Star gear in MyCAREER, bug fixes, updates the roster, and unveils 8 additional "Greatest of All-Time" NBA players, featuring Shaquille O'Neal, Joel Embiid, Michael Jordan, Donovan Mitchell, Penny Hardaway, Tyrese Haliburton, David Robinson, and Domantas Sabonis.</p>
+        </div>
+        <div class="version">
+            <p>Version 1.2</p>
+        </div>
+    </div>
+
+    <div class="data">
+        <div class="privacy-content d-flex">
+
+            <div class="profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><path d="M7.36 17l3.208 3.208A24.23 24.23 0 007.39 32.235c0 13.44 10.93 24.374 24.366 24.374 4.374 0 8.483-1.159 12.035-3.186L47 56.631A28.616 28.616 0 0131.756 61C15.874 61 3 48.122 3 32.235A28.637 28.637 0 017.36 17zM9.77 6.642l47.588 47.606a2.204 2.204 0 010 3.11 2.206 2.206 0 01-3.111 0L6.632 9.753c-.829-.8-.856-2.283 0-3.11.826-.828 2.253-.886 3.138 0zM32.238 3C48.123 3 61 15.878 61 31.761c0 5.597-1.599 10.82-4.364 15.239l-3.208-3.209a24.221 24.221 0 003.182-12.03c0-13.437-10.934-24.37-24.372-24.37a24.223 24.223 0 00-12.03 3.18L17 7.363A28.628 28.628 0 0132.238 3zm-7.492 31L36 45H18.373C17.44 45 17 44.418 17 43.572c0-2.224 2.5-7.11 7.746-9.572zm6.915-20C35.733 14 39 17.634 39 22.002c0 2.419-.874 4.529-2.281 5.998L26 16.923C27.343 15.145 29.376 14 31.661 14z"></path></svg>
+            </div>
+            <div class="data-state">
+                <h3>Data Not Linked to You</h3>
+            </div>
+            <div class="paragraph">
+                <p>The following data, which may be collected but is not linked to your identity, may be used for following purposes: </p>
+            </div>
+        </div>
+        <div class="analytics analytics-content">
+            <div class="title">
+                <h5>Analytics</h5>
+            </div>
+            <div class="info-wrapper d-flex" style="justify-content: center;">
+                <div class="data-logo">
+                    <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" class="privacy-type__glyph privacy-type__glyph--usage-data" aria-hidden="true"><path d="M49.925 53.844h7.098c3.287 0 4.978-1.572 4.978-4.692V14.52c0-3.12-1.69-4.717-4.978-4.717h-7.098c-3.239 0-4.93 1.596-4.93 4.717v34.632c0 3.12 1.691 4.692 4.93 4.692zm-21.412 0h7.097c3.287 0 4.955-1.572 4.955-4.692V21.475c0-3.12-1.668-4.717-4.955-4.717h-7.097c-3.264 0-4.955 1.596-4.955 4.717v27.677c0 3.12 1.691 4.692 4.955 4.692zm-21.413 0h7.074c3.287 0 4.978-1.572 4.978-4.692V28.406c0-3.12-1.691-4.716-4.978-4.716H7.1c-3.264 0-4.955 1.596-4.955 4.716v20.746c0 3.12 1.691 4.692 4.955 4.692z"></path></svg>
+                </div>
+                <div class="data-info">
+                    <h6>Usage Data</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-banner" style="background-color: white; margin-top: 10px;">
+        <p style="text-align: start;">Privacy practices may vary, for example, based on the features you use or your age. <span class="more">Learn More</span></p>
+    </div>
 </section>
 
 <script src="header.js"></script>
@@ -298,7 +427,7 @@
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
+        btnText.innerHTML = "more";
         moreText.style.display = "none";
     } else {
         dots.style.display = "none";
@@ -306,6 +435,16 @@
         moreText.style.display = "inline";
     }
     }
+    var modalElement1 = document.getElementById('exampleModal');
+    var modalElement2 = document.getElementById('exampleModal-privacy');
+    var modalInstance1 = new bootstrap.Modal(modalElement1);
+    var modalInstance2 = new bootstrap.Modal(modalElement2);
+
+    const arcadeLogo = document.querySelector('.apple-arcade')
+
+    window.addEventListener('scroll', function() {
+        const triggerPoint = 100;
+    })
 </script>
 
 <style>
@@ -333,14 +472,7 @@
     .subheader {
     filter: blur(0.03rem);
     background-color: rgb(255, 255, 255, 0.9);
-
-    .preview {
-        margin-left: 10px;
-    }
-
-    .apple-arcade {
-        margin-right: 10px;
-    }
+    justify-content: space-around !important;
     }
 
     .appstore-button {
@@ -354,6 +486,7 @@
 
     .preview * {
     font-size: 1.4rem;
+    margin-top: 15px;
     }
     .game-ad {
     background-color: black;
@@ -383,6 +516,11 @@
     .game-info {
     border-bottom: 1px solid #d6d6d6;
     }
+    .game-title{
+        h3{
+            font-size: 1.3rem;
+        }
+    }
 
     .screenshots-container {
     display: flex;
@@ -398,7 +536,40 @@
     text-align: start;
     border-top: 1px solid #d6d6d6;
     }
+    .read-more p {
+        max-width: 513px;
+        font-size: .9rem;
+    }
+
+    .data-info *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .data-info{
+        margin-top: 5px;
+    }
+
+    .alert-content{
+        border-top: 1px solid #d6d6d6; 
+        flex-direction: column;
+    }
+    .data{
+        max-width: 490px;
+        border-radius: 20px;
+        background-color: #f8f8f8;
+        padding: 10px;
+    }
+    .privacy-content {
+        flex-direction: column;
+    }
+    .privacy-content * {
+        text-align: center;
+    }
+    .analytics-content .title h5{
+        text-align: center;
+    }
     /* media quary */
+    
     @media screen and (max-width: 734px) {
     .screenshots-container {
         height: 403px;
@@ -412,11 +583,28 @@
         background-position: right;
         background-size: cover;
     }
-    }
+}
+.more{
+    color: #0070c9; cursor: pointer;
+}
     @media screen and (max-width: 575px) {
     .game-ad {
         border-radius: 0%;
     }
+    .context{
+        flex-direction: column-reverse;
+    }
+
+    .modal-content{
+        border-radius: 20px !important;
+        outline: none !important;
+    }
+
+    }
+    @media screen and (max-width : 830px){
+        .hover-container{
+            display: none !important;
+        }
     }
 </style>
 <script
